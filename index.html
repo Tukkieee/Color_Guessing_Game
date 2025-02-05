@@ -8,32 +8,30 @@
   </head>
   <body>
     <div class="container">
+      
       <div class="title">
         <h1>Color Guessing Game</h1>
+        <!--Score -->
         <p>Score: <span data-testid="score">0</span></p>
       </div>
       <div class="content">
+        <!-- Target Color Box -->
         <div class="left">
           <div class="color-box" data-testid="colorBox"></div>
         </div>
 
-        <!-- Target Color Box -->
-
         <div class="right">
-          <!-- Game Instructions -->
+          <!-- Game Instruction and Status -->
           <p data-testid="gameInstructions">Guess the correct color!</p>
           <p data-testid="gameStatus"></p>
 
           <!-- Color Options -->
           <div class="color-options">
-            <!-- Buttons will be dynamically added here -->
+           
           </div>
-          <!-- Game Status -->
-          <!-- Score -->
-          <!-- New Game Button -->
           <div class="btn">
             <button class="end-game game-btn">End Game</button>
-
+          <!-- New Game Button -->
             <button data-testid="newGameButton" class="new-game game-btn">New Game</button>
           </div>
         </div>
