@@ -83,6 +83,7 @@ body {
   /* Game Status */
   [data-testid="gameStatus"] {
     margin: 10px 0;
+    height: 20px;
     font-weight: bold;
   }
   
