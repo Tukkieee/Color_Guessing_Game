@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assests/index.css" />
+    <title>Color Guessing Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Color Guessing Game</h1>
+        <p>Score: <span data-testid="score">0</span></p>
+      </div>
+      <div class="content">
+        <div class="left">
+          <div class="color-box" data-testid="colorBox"></div>
+        </div>
+
+        <!-- Target Color Box -->
+
+        <div class="right">
+          <!-- Game Instructions -->
+          <p data-testid="gameInstructions">Guess the correct color!</p>
+          <p data-testid="gameStatus"></p>
+
+          <!-- Color Options -->
+          <div class="color-options">
+            <!-- Buttons will be dynamically added here -->
+          </div>
+          <!-- Game Status -->
+          <!-- Score -->
+          <!-- New Game Button -->
+          <div class="btn">
+            <button class="end-game game-btn">End Game</button>
+
+            <button data-testid="newGameButton" class="new-game game-btn">New Game</button>
+          </div>
+        </div>
+      </div>
+      <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+          <h2>Game Over</h2>
+          <p>Congratulations!🎉</p>
+          <p>Your Final Score: <span id="finalScore">0</span></p>
+          <button id="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assests/index.js"></script>
+  </body>
+</html>
